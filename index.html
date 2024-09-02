@@ -1,0 +1,353 @@
+<!-- fully coded by restrict -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fraud.gay</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href=fraudstar.png rel=icon type=image/x-icon>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            if (window.innerWidth <= 600) {
+                var tosLink = document.querySelector('.navbar-button[href="https://fraud.gay/tos"]');
+                if (tosLink) {
+                    tosLink.textContent = 'ToS';
+                }
+            }
+        });
+    </script>
+    
+    <style>
+        @font-face {
+            font-family: Satoshi;
+            src: url(Satoshi-Black.ttf) format("truetype");
+        }
+
+        :root {
+            --bg-color-1: hsl(0, 0%, 4%);
+            --bg-color-2: hsl(0, 0%, 6%);
+            --bg-color-3: hsl(0, 0%, 17%);
+            --text-color-1: hsl(210, 14%, 95%);
+            --text-color-2: hsl(214, 11%, 88%);
+            --text-color-3: hsl(210, 3%, 88%);
+            --accent-color-1: hsl(288, 5%, 82%);
+            --accent-color-2: hsla(300, 3%, 86%, 0.89);
+            --font-family: "Satoshi", sans-serif;
+            --navbar-border-color: hsl(0, 0%, 7.7%); 
+            --footer-color: hsla(220, 11%, 95%, 0.514);
+        }
+
+        body {
+            background-color: var(--bg-color-1);
+            color: var(--text-color-3);
+            font-family: var(--font-family);
+            margin: 0;
+            overflow: hidden;
+            -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+        }
+
+        .navbar {
+            background-color: var(--bg-color-2);
+            width: 100%;
+            display: flex;
+            border: 1px solid var(--navbar-border-color);
+            border-radius: 25px;
+            overflow: hidden; 
+            justify-content: space-between;
+            align-items: center;
+            max-width: 750px;
+            margin: 20px auto 0;
+            box-sizing: border-box;
+            animation: enter 1s ease;
+        }
+
+        .navbar-button {
+    text-decoration: none;
+    color: var(--text-color-1);
+    font-weight: normal;
+    font-family: "Satoshi", sans-serif; 
+    margin: 0 1rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+    animation: enter 1s ease;
+    margin: 0 10px;
+}
+
+
+        .navbar-button:hover {
+            color: var(--accent-color-1);
+            transform: scale(1.05) translateY(0);
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .navbar-container {
+            background-color: var(--bg-color-2);
+            display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 800px;
+    animation: enter 1s ease;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            border-radius: 30px;
+            transition: transform 0.5s ease;
+            animation: enter 1s ease;
+        }
+
+        .logo img {
+            width: 70px;
+            height: 70px;
+            margin-right: 10px;
+            animation: enter 1s ease;
+        }
+
+        .logo img.spin-logo {
+            width: 70px;
+            height: 70px;
+            margin-right: 10px;
+            animation: enter 1s ease;
+        }
+
+        .logo img.spin-logo:hover {
+            transform: rotate(360deg);
+            transition: transform 0.5s ease; 
+        }
+
+        .logo a {
+            text-decoration: none;
+            color: var(--text-color-1);
+            font-weight: bold;
+            margin: 0 0.001rem;
+            transition: color 0.3s ease;
+            animation: enter 1s ease;
+        }
+
+        .logo a:hover {
+            color: var(--accent-color-1);
+            transition: color 0.3s ease;
+        }
+
+        .xeno {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 70vh;
+            animation: enter 1s ease;
+        }
+
+        .xeno h1 {
+            font-size: 90px;
+            color: var(--text-color-2);
+            margin-bottom: -30px;
+            animation: enter 1s ease;
+        }
+
+        .xeno p {
+            font-size: 1.5rem;
+            color: #bbb;
+            animation: enter 1s ease;
+        }
+
+        .navbar-right {
+            display: flex;
+    align-items: center;
+    margin-left: auto;
+    justify-content: flex-end;
+        }
+
+        .cart {
+            background-color: var(--accent-color-1);
+            color: var(--bg-color-2);
+            border: none;
+            border-radius: 9px;
+            padding: 5px 10px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 25px;
+            margin-left: auto;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .cart a {
+            text-decoration: none;
+            color: var(--bg-color-2);
+        }
+
+        .cart:hover {
+            background-color: var(--accent-color-2);
+            color: var(--bg-color-2);
+            transform: scale(1.05) translateY(0);
+            transition: 0.1s ease;
+        }
+
+        .footer-container {
+            animation: enter 1s ease;
+        }
+
+        .start {
+            background-color: var(--accent-color-1);
+            color: var(--bg-color-2);
+            border: none;
+            border-radius: 8px;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1rem;
+            margin: -15px 0;
+            transition: background-color 0.3s ease;
+            animation: enter 1s ease;
+        }
+
+        .start:hover {
+            background-color: var(--accent-color-2);
+        }
+
+        @keyframes enter {
+            0% {
+                opacity: 0;
+                transform: translateY(100px) scale(.8) rotateX(45deg) perspective(1000px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1) rotateX(0) perspective(1000px);
+            }
+        }
+
+        .noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+        #clock {
+            position: absolute;
+            bottom: 50%;
+            left: 50%;
+            transform: translate(-50%, 50%);
+            font-size: 20px;
+            color: var(--footer-color);
+        }
+
+        @media only screen and (max-width: 600px) {
+            .navbar-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .xeno {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .xeno h1 {
+        font-size: 50px;
+        margin-bottom: 5px;
+    }
+
+    .xeno p {
+        font-size: 1rem;
+        margin-bottom: 5px;
+    }
+
+    .start {
+        margin-top: 5px;
+    }
+
+    .xeno h1,
+    .xeno p {
+        margin: 0; 
+    }
+
+    .cart {
+        display: none; 
+    }
+
+    .navbar-button[href="https://fraud.gay/tos"] {
+        content: "TOS" !important; 
+    }
+
+    .footer-container p:not(#clock) {
+        display: none;
+    }
+
+    #clock {
+        position: absolute;
+        bottom: 5px; 
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 20px;
+        color: var(--footer-color);
+    }
+
+    .footer-container hr {
+        width: 90%;
+        border-color: var(--navbar-border-color);
+        opacity: 0.09;
+        margin: -3px 0;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="navbar" style="max-width: 750px; margin: 20px auto 0; display: flex; justify-content: space-between; align-items: center;">
+        <div class="logo">
+            <img class="spin-logo" src="fraudstar.png" alt="Logo">
+            <a class="navbar-button" href="https://fraud.gay">Home</a>
+        </div>
+        <div class="navbar-right" style="display: flex; gap: 10px;">
+            <a class="navbar-button" href="https://discord.gg/f7vRfWPxcM">Discord</a>
+            <a class="navbar-button" href="https://fraud.gay/tos">Terms of Service</a>
+            <a class="navbar-button" href="https://fraud.gay/privacy">Privacy Policy</a>
+            <div class="cart" style="margin-right: 10px;">
+                <a href="https://fraudotgay.mysellix.io/pay/65fd1b-30e4969a6f-ce49d7">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+   <div class="xeno">
+        <h1>fraud.gay</h1>
+        <p>elevate your public image, one link, endless possibilities</p>
+        <a class="start" href="https://discord.gg/f7vRfWPxcM">Get Started!</a>
+    </div>
+    <footer style="position: fixed; bottom: 0; width: 100%;" class="footer-container">
+        <hr style="border-color: var(--navbar-border-color); opacity: 0.09; margin: -3px 0;">
+        <div style="display: flex; justify-content: space-between; color: var(--footer-color); animation: enter 1s ease;">
+            <p style="margin-left: 10px;">copyright &copy; 2024 fraud.gay</p>
+            <p style="margin-right: 10px;">crafted by restrict @ https://fraud.gay</p>
+            <div id="clock"></div> 
+        </div>
+    </footer>    
+    <script src=funnyV2.js></script>
+    <script src=geek.js></script>
+    <script>
+function niggaclock() {
+    document.getElementById('clock').textContent = new Date().toLocaleTimeString('en-US', {
+        hour12: true,
+        hour: 'numeric',
+        minute: '2-digit',
+        second: '2-digit'
+    });
+}
+
+setInterval(niggaclock, 1000);
+    </script>
+</body>
+</html>

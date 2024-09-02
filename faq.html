@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fraud.gay</title>
+    <link rel="icon" href="fraudstar.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <style>
+        @font-face {
+            font-family: 'Satoshi';
+            src: url('Satoshi-Black.ttf') format('truetype');
+        }
+        body {
+            background-color: #000;
+            font-family: 'Satoshi', sans-serif;
+            -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+        }
+
+        ::-webkit-scrollbar {
+            width: 7px;
+            background: transparent;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: rgba(0, 0, 0, 0.7);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+        }
+
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        #particles-js {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+            z-index: -1;
+        }
+        .container {
+            max-width: 1225px;
+            margin: 0 auto;
+        }
+        .privacy-container {
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            color: #fff;
+        }
+        .section-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 20px;
+            margin-bottom: 12px;
+        }
+        .sub-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 16px;
+            margin-bottom: 10px;
+        }
+        .content {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #e2e2e2;
+        }
+        .last-updated {
+            font-size: 16px;
+            opacity: 0.6;
+        }
+
+                @media screen and (max-width: 640px) {
+            .privacy-container {
+                padding: 20px;
+            }
+            .section-title {
+                font-size: 20px;
+            }
+            .sub-title {
+                font-size: 18px;
+            }
+            .content {
+                font-size: 16px;
+            }
+        }
+
+        .noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+    </style>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="min-h-screen flex items-center justify-center">
+        <div class="container">
+            <div class="privacy-container">
+                <h1 class="text-4xl font-bold mb-6">
+                    <span style="font-weight: bold">Frequently Asked Questions</span> @ <a href="https://fraud.gay" style="font-weight: bold; text-decoration: underline">fraud.gay</a>
+                </h1>
+                <p class="last-updated">Last updated: 08/08/24</p>
+
+                <div class="section-title mt-6">Frequently Asked Questions:</div>
+
+                <div class="faq-box bg-black-200 border rounded-lg p-4 mb-4" id="faq-question-1">
+                    <div class="flex items-center justify-between cursor-pointer" onclick="toggleFAQ(1)">
+                        <div class="text-lg font-bold">What is fraud.gay?</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black-600 toggle-arrow" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </div>
+                    <div class="answer transition-max-height overflow-hidden max-h-0" id="faq-answer-1">
+                        <div class="border-t mt-4 pt-4">
+                            <p>fraud.gay is a paid biolink service programmed by restrict and domain owned by cudi, we offer other services like email forwarding and more.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-box bg-black-200 border rounded-lg p-4 mb-4" id="faq-question-2">
+                    <div class="flex items-center justify-between cursor-pointer" onclick="toggleFAQ(2)">
+                        <div class="text-lg font-bold">What's a biolink?</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black-600 toggle-arrow" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </div>
+                    <div class="answer transition-max-height overflow-hidden max-h-0" id="faq-answer-2">
+                        <div class="border-t mt-4 pt-4">
+                            <p>A biolink is your online business card in your bio or personal website. They are used to promote and showcase your social media handles and show off your brands and projects, this can be used to increase attraction towards your socials or to help against impersonation.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-box bg-black-200 border rounded-lg p-4 mb-4" id="faq-question-3">
+                    <div class="flex items-center justify-between cursor-pointer" onclick="toggleFAQ(3)">
+                        <div class="text-lg font-bold">How can i get a biolink?</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black-600 toggle-arrow" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </div>
+                    <div class="answer transition-max-height overflow-hidden max-h-0" id="faq-answer-3">
+                        <div class="border-t mt-4 pt-4">
+                            <p>Each biolink invitation is $2.99 which each has a variety of payment methods, after buying, just join our discord, next go the ticket channel and make a ticket and we will assist you throughout the way.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-box bg-black-200 border rounded-lg p-4 mb-4" id="faq-question-4">
+                    <div class="flex items-center justify-between cursor-pointer" onclick="toggleFAQ(4)">
+                        <div class="text-lg font-bold">How can I get a badge?</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black-600 toggle-arrow" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </div>
+                    <div class="answer transition-max-height overflow-hidden max-h-0" id="faq-answer-4">
+                        <div class="border-t mt-4 pt-4">
+                            <p>Badges will be coming soon, badges that you will see early on, on some peoples profiles are mainly for testing purposes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-box bg-black-200 border rounded-lg p-4 mb-4" id="faq-question-5">
+                    <div class="flex items-center justify-between cursor-pointer" onclick="toggleFAQ(5)">
+                        <div class="text-lg font-bold">Does fraud.gay have a dashboard?</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black-600 toggle-arrow" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </div>
+                    <div class="answer transition-max-height overflow-hidden max-h-0" id="faq-answer-5">
+                        <div class="border-t mt-4 pt-4">
+                            <p>We sadly do not, fraud.gay was supposed to be a fun project but restrict only finds frontend fun and not backend but, it could probably be made in the future.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-box bg-black-200 border rounded-lg p-4 mb-4" id="faq-question-6">
+                    <div class="flex items-center justify-between cursor-pointer" onclick="toggleFAQ(6)">
+                        <div class="text-lg font-bold">How do i update my biolink?</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black-600 toggle-arrow" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </div>
+                    <div class="answer transition-max-height overflow-hidden max-h-0" id="faq-answer-6">
+                        <div class="border-t mt-4 pt-4">
+                            <p>Just create a ticket in our discord server, list everything you want changed that follows a format, then wait for @adopters (restrict) till he changes it.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-box bg-black-200 border rounded-lg p-4 mb-4" id="faq-question-7">
+                    <div class="flex items-center justify-between cursor-pointer" onclick="toggleFAQ(7)">
+                        <div class="text-lg font-bold">How can I get a fraud.gay email?</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black-600 toggle-arrow" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </div>
+                    <div class="answer transition-max-height overflow-hidden max-h-0" id="faq-answer-7">
+                        <div class="border-t mt-4 pt-4">
+                            <p>Currently not out for the public, coming soon so stay tuned.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleFAQ(id) {
+            const answer = document.getElementById(`faq-answer-${id}`);
+            const toggleArrow = document.getElementById(`faq-question-${id}`).querySelector(".toggle-arrow");
+
+            if (answer.style.maxHeight) {
+                answer.style.maxHeight = null;
+                toggleArrow.style.transform = "rotate(0deg)";
+            } else {
+                answer.style.maxHeight = answer.scrollHeight + "px";
+                toggleArrow.style.transform = "rotate(180deg)";
+            }
+        }
+
+        const titles = ["fraud.gay", "terms of service", "@adopters", "dont skid me", "biolink service"]; 
+        let currentIndex = 0;
+
+        function changetitle() {
+            document.title = titles[currentIndex];
+            currentIndex = (currentIndex + 1) % titles.length;
+        }
+
+        setInterval(changetitle, 100);
+    </script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+                document.addEventListener("DOMContentLoaded", function() {
+particlesJS("particles-js", {
+    "particles": {
+      "number": {
+        "value": 355,
+        "density": {
+          "enable": true,
+          "value_area": 789.14764163227279
+        }
+      },
+      "color": {
+        "value": "#ffffff"
+      },
+      "shape": {
+        "type": "circle",
+        "stroke": {
+          "width": 0,
+          "color": "#000000"
+        },
+        "polygon": {
+          "nb_sides": 5
+        },
+        "image": {
+          "src": "img/github.svg",
+          "width": 100,
+          "height": 100
+        }
+      },
+      "opacity": {
+        "value": 0.79927153781200905,
+        "random": false,
+        "anim": {
+          "enable": true,
+          "speed": 0.2,
+          "opacity_min": 0,
+          "sync": false
+        }
+      },
+      "size": {
+        "value": 2,
+        "random": true,
+        "anim": {
+          "enable": true,
+          "speed": 2.6,
+          "size_min": 0,
+          "sync": false
+        }
+      },
+      "line_linked": {
+        "enable": false,
+        "distance": 150,
+        "color": "#ffffff",
+        "opacity": 0.4,
+        "width": 1
+      },
+      "move": {
+        "enable": true,
+        "speed": 0.3,
+        "direction": "none",
+        "random": true,
+        "straight": false,
+        "out_mode": "out",
+        "bounce": false,
+        "attract": {
+          "enable": false,
+          "rotateX": 600,
+          "rotateY": 1200
+        }
+      }
+    },
+    "interactivity": {
+      "detect_on": "canvas",
+      "events": {
+        "onhover": {
+          "enable": true,
+          "mode": "bubble"
+        },
+        "onclick": {
+          "enable": true,
+          "mode": "push"
+        },
+        "resize": true
+      },
+      "modes": {
+        "grab": {
+          "distance": 400,
+          "line_linked": {
+            "opacity": 1
+          }
+        },
+        "bubble": {
+          "distance": 83.91608391608392,
+          "size": 1,
+          "duration": 3,
+          "opacity": 1,
+          "speed": 3
+        },
+        "repulse": {
+          "distance": 200,
+          "duration": 0.4
+        },
+        "push": {
+          "particles_nb": 4
+        },
+        "remove": {
+          "particles_nb": 2
+        }
+      }
+    },
+    "retina_detect": true
+  });
+});
+    </script>
+</body>
+</html>
