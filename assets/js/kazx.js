@@ -15,19 +15,19 @@ document.addEventListener("DOMContentLoaded", function () {
             switch (e.key.toLowerCase()) {
                 case "s":
                     e.preventDefault();
-                    window.location.href = "https://bloody.bio/consist";
+                    window.location.href = "https://resort.lol";
                     break;
                 case "c":
                     e.preventDefault();
-                    window.location.href = "https://bloody.bio/consist";
+                    window.location.href = "https://resort.lol";
                     break;
                 case "e":
                     e.preventDefault();
-                    window.location.href = "https://bloody.bio/consist";
+                    window.location.href = "https://resort.lol";
                     break;
                 case "u":
                     e.preventDefault();
-                    window.location.href = "https://bloody.bio/consist";
+                    window.location.href = "https://resort.lol";
                     break;
             }
         }
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
 
     var options = {
-        strings: ["@acipimox", "codeine sipper", "perc popper", "hillz my twin", "res my dawg"],
+        strings: ["@lostinfyb on ig", "codeine sipper", "perc popper", "tear my twin", "resort.lol/1"],
         typeSpeed: 45,
         backSpeed: 35,
         backDelay: 500,
