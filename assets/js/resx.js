@@ -15,19 +15,19 @@ document.addEventListener("DOMContentLoaded", function () {
             switch (e.key.toLowerCase()) {
                 case "s":
                     e.preventDefault();
-                    window.location.href = "https://bloody.bio/consist";
+                    window.location.href = "https://resort.lol/1";
                     break;
                 case "c":
                     e.preventDefault();
-                    window.location.href = "https://bloody.bio/consist";
+                    window.location.href = "https://resort.lol/1";
                     break;
                 case "e":
                     e.preventDefault();
-                    window.location.href = "https://bloody.bio/consist";
+                    window.location.href = "https://resort.lol/1";
                     break;
                 case "u":
                     e.preventDefault();
-                    window.location.href = "https://bloody.bio/consist";
+                    window.location.href = "https://resort.lol/1";
                     break;
             }
         }
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
 
     var options = {
-        strings: ["creator @ fraud.gay", "cudi my righthand", "beloved  paster", "@adopters", "@backfilled"],
+        strings: ["creator @ tear.lol", "tear my righthand", "beloved  paster", "@mr.gripha", "@tears in japan"],
         typeSpeed: 45,
         backSpeed: 35,
         backDelay: 500,
